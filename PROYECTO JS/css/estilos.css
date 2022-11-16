@@ -1,0 +1,168 @@
+:where(*, *::before, *::after){
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+    max-width: auto;
+    height: auto;
+}
+
+:root {
+    font: size 62.5%;
+    --blanco: #ffffff;
+    --titulo_principal: #ff9900;
+    --titulos_secundarios: #000000;
+    --boton: #e9ec10f6;
+    --contenidos: #011849;
+  }
+  
+  body {
+    font-family: "Poor Story", cursive;
+    background-color: var(--titulo_principal);
+    font-size: 20px;
+  }
+
+  span{
+    text-align: center;
+    font-family: 'Rubik Bubbles', cursive ;
+  }
+
+  .hide {
+    max-height: 0 !important;
+}
+
+.dropdown{
+	border: none;
+	width: 15em;
+	margin-bottom: 3rem;
+  font-family: 'Rubik Bubbles', cursive;
+  margin: 2.5rem;
+
+border-radius: 2.5rem;
+}
+
+.dropdown :hover{
+  background-color: var(--titulos_secundarios);
+  color: var(--titulo_principal);
+  margin-bottom: 6em;
+  margin: 20px;
+  border-radius: 2.5rem;
+
+}
+
+.dropdown .title{
+	margin: .3em .3em .3em .3em;	
+	width: 100%;
+  padding: 10px;
+
+}
+
+.dropdown .title .fa-angle-right{
+	float: left;
+	margin-right: .7em;
+	transition: transform .3s;
+}
+
+.dropdown .menu{
+	transition: max-height .5s ease-out;
+	max-height: 20em;
+	overflow: hidden;
+}
+
+.dropdown .menu .option{
+	margin: .3em .3em .3em .3em;
+	margin-top: 0.3em;
+}
+
+.dropdown .menu .option:hover{
+	background: rgba(0,0,0,0.2);
+}
+
+
+.rotate-90{
+	transform: rotate(90deg);
+}
+
+  .presentacion {
+    height: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--titulos_secundarios);
+    color: var(--titulo_principal);
+    border-radius: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .sobre_nosotros{
+    font-size: 2.5rem;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 700px;
+    height: 100px;
+  }
+
+  .logo {
+    height: 100%;
+  }
+
+  header{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 2.5rem;
+    font-size: 2.5rem;
+    
+  }
+
+  .menu {
+    float: left;
+    margin-top: 10px;
+    width: 800px;
+    background-color: var(--blanco);
+    border-radius: 2.5rem;
+    font-family: 'Rubik Bubbles', cursive;
+    font-size:25px;
+    margin: 10px;
+    padding: 10px;
+}
+.menu li {
+    border-right: 1px solid #000000;
+    float: left;
+    list-style: none outside none;
+    padding-left: 5px;
+    padding-right: 1px;
+    width: auto;
+}
+
+.menu li:last-child {
+    border-right:none;
+}
+.menu li a {
+    color: var(--titulos_secundarios);
+    text-decoration: none;
+}
+.menu li a:hover {
+    color: var(--titulo_principal);
+    text-decoration: none;
+}
+.menu .current a {
+    color:var(--titulos_secundarios);
+    text-decoration: none;
+}
+.menu .current a:hover {
+    color: var(--titulo_principal);
+    text-decoration: none;
+}
+
+.card{
+border: #000000;
+margin: 50px;
+}
